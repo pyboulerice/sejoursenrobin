@@ -172,13 +172,13 @@ footer {
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
+.column, .column-4-menu {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
 
-.column-3 {
+.column-3, .column-3-menu {
     flex: 33%;
     max-width: 33%;
     padding: 0 4px;
@@ -190,13 +190,13 @@ footer {
     padding: 0 4px;
 }
 
-.column img, .column-2 img, .column-3 img {
+.column img, .column-4-menu img, .column-2 img, .column-3 img, .column-3-menu img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
-.column p, .column-2 p, .column-3 p {
+.column p, .column-4-menu p, .column-2 p, .column-3 p, .column-3-menu p {
     text-align: center;
 }
 
@@ -208,7 +208,7 @@ footer {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .column {
+  .column, .column-4-menu {
     flex: 50%;
     max-width: 50%;
   }
@@ -216,18 +216,10 @@ footer {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
+  .column, .column-2, .column-3 {
     flex: 100%;
     max-width: 100%;
   }
-    .column-2 {
-        flex: 100%;
-        max-width: 100%;
-    }
-    .column-3 {
-        flex: 100%;
-        max-width: 100%;
-    }
 }
 
 
