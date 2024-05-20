@@ -2,7 +2,7 @@ body {
   background-color: #123914;
     background-image: url('images/background.svg');
     background-size: contain;
-    font-family: Garamond;
+    font-family: "Libre Baskerville", serif;
 }
 
 h1.header {
@@ -89,7 +89,9 @@ footer {
 
 /* Slideshow container */
 .slideshow-container {
-  max-height: 500px;
+  /*max-height: 500px;*/
+    width: 100%;
+    aspect-ratio: 3 / 2;
   position: relative;
   margin: auto;
 }
@@ -98,7 +100,8 @@ footer {
     
     object-fit:cover;
     width:100%;
-    height:500px;
+    aspect-ratio: 3 / 2;
+    /* height:500px; */
     cursor: pointer;
 }
 
@@ -282,13 +285,24 @@ footer {
 .selectiontext {
     letter-spacing: 0.1em;
     color: #9ac932;
-    font-family: Garamond;
+    font-family: "Libre Baskerville", serif;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/*
+.selectiontext:hover {
+    text-decoration: underline;
+}
+*/
+
 @media screen and (max-width: 800px) {
   .selectiontext {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .selectiontext {
+    font-size: 14px;
   }
 }
 
@@ -338,7 +352,7 @@ footer {
 }
 
 .square-img {
-    aspect-ratio: 1 / 1;  /* defining the aspect ratio of the image */
+    aspect-ratio: 3 / 2;  /* defining the aspect ratio of the image */
     object-fit: cover;    /* making sure the image isn't distorted */
 }
     
@@ -369,7 +383,7 @@ footer {
 /* Pop-up */
 
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {cursor: pointer;}
 
 
 #myImg2 {
@@ -379,7 +393,7 @@ footer {
   transition: 0.3s;
 }
 
-#myImg2:hover {opacity: 0.7;}
+#myImg2:hover {cursor: pointer;}
 
 /* The Modal (background) */
 .modal {
