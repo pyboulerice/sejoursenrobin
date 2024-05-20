@@ -17,6 +17,7 @@ h1.header-main {
     letter-spacing: 0.1em;
     padding: 20px 0px 0px 0px;
     font-size: 42px;
+    text-shadow: #123914 1px 0 10px;
 }  
 
 h2, h3 {
@@ -285,7 +286,7 @@ footer {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .selectiontext {
     font-size: 18px;
   }
@@ -348,6 +349,10 @@ footer {
     flex: 50%;
     max-width: 50%;
   }
+    .columncomment {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
